@@ -7,22 +7,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+<h1><span style="color: #4a90e2">L</span><span style="color: #93e28e">a</span><span style="color: #e270cf">b</span>
+    <span style="color: #e2d45e">:</span> <span style="color: #5be2cc">P</span><span style="color: #ac84e2">i</span>
+    <span style="color: #e233a3">x</span><span style="color: #2ae2dc">e</span><span style="color: #e25258">l</span>
+    <span style="color: #6ae297">A</span><span style="color: #e2d595">r</span><span style="color: #7ee27d">t</span>
+    <span style="color: #bf92e2">M</span><span style="color: #3cbfe2">a</span><span style="color: #e24f5a">k</span>
+    <span style="color: #dde29d">e</span><span style="color: #8fe278">r</span></h1>
 
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
         Grid Height:
-        <input type="number" id="input_height" name="height" min="1" max="500" value="1">
+        <input type="number" id="input_height" name="height" min="1" max="42" value="1">
         Grid Width:
-        <input type="number" id="input_width" name="width" min="1" max="500" value="1">
-        <input type="submit" onclick="makeGrid()">
+        <input type="number" id="input_width" name="width" min="1" max="42" value="1">
+        <input id="submit" type="submit" onclick="makeGrid()">
     </form>
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker" value="#ffffff">
 
     <h2>Design Canvas</h2>
-    <table id="pixel_canvas"></table>
+    <table id="pixel_canvas"> <!--aka grid container-->
+
+    </table>
 
     <script src="designs.js"></script>
 </body>
