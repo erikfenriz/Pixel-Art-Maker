@@ -13,6 +13,12 @@ function makeGrid() {
     table = $("#pixel_canvas");
     row  = $("<tr></tr>");
     col = $("<td></td>");
+    if (height > 50 || width > 50 || height < 1 || width < 1) {
+        if (!error.classList.contains("error")) {
+            error.classList.toggle("error");
+            error.innerText = "the dimension are. has to be smaller than 50 and bigger than 0"
+        }
+    }
 for (let x = 0; x < height; x++){
     $('#pixel_canvas').append(row);
     for(let y = 0;y < width; y++){
