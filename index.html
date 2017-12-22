@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jscolor.min.js"></script>
 </head>
 <body>
 <h1><span style="color: #4a90e2">L</span><span style="color: #93e28e">a</span><span style="color: #e270cf">b</span>
@@ -20,15 +21,14 @@
         <input type="number" id="input_height" name="height" min="1" max="42" value="1">
         Grid Width:
         <input type="number" id="input_width" name="width" min="1" max="42" value="1">
-        <input id="submit" type="submit" onclick="makeGrid()">
+        <button id="submit" type="button" onclick="makeGrid()">Submit</button>
     </form>
 
     <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker" value="#ffffff">
+<input class="jscolor" value="ab2567">
 
     <h2>Design Canvas</h2>
     <table id="pixel_canvas"> <!--aka grid container-->
-<td></td>
     </table>
 
     <script src="designs.js"></script>
