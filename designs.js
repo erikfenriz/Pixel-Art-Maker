@@ -2,7 +2,8 @@
 // Select size input
 
 // When size is submitted by the user, call makeGrid()
-let height, width, color, submit, table, d, row, col;
+let height, width, color, submit, table, d, row, col, reset;
+
 
 function makeGrid() {
     d = document;
@@ -13,6 +14,7 @@ function makeGrid() {
     table = $("#pixel_canvas");
     row  = $("<tr></tr>");
     col = $("<td></td>");
+
     if (height > 50 || width > 50 || height < 1 || width < 1) {
         if (!error.classList.contains("error")) {
             error.classList.toggle("error");
@@ -28,4 +30,10 @@ for (let x = 0; x < height; x++){
         row.append(col);
     }
 }
+}
+
+reset = $("#pixel_canvas").html();
+
+function backUp(){
+    $("#pixel_canvas").html(reset);
 }
