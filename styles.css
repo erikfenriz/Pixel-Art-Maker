@@ -39,11 +39,15 @@ input[type=number] {
     width: 6em;
 }
 .error {
-    margin-top: 20px;
-    background: #e93636;
-    height: 40px;
-    width: 300px;
-    padding-top: 22px;
-    border: 1px solid #333;
-    border-radius: 7px;
+    border-radius: 0%;
+    content:"";
+    position: absolute;
+    top: 0; left: 0;
+    width: inherit; height: inherit;
+    border-radius: 999px;
+    box-shadow: inset 30px 0 0 rgba(226, 82, 88, 0.4),
+    inset 0 30px 0 rgba(255, 93, 84, 0.97),
+    inset -30px 0 0 rgba(255, 135, 88, 0.94),
+    inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+    animation: shadowsdancing 4s infinite;
 }

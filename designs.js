@@ -23,7 +23,7 @@ function makeGrid() {
             backUp();
         }
     }else{
-        error.innerText = "Draw ;)";
+        error.innerText = "";
         $("div").removeClass("error");
         for (let x = 0; x < height; x++) {
             $('#pixel_canvas').append('<tr></tr>');
